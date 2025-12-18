@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mask-fade-30 {
+    /* * Degradado de opacidad al 30% inferior de la imagen.
+     * Negro (opacidad total) hasta el 70% de la altura, luego transición a transparente.
+     */
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+

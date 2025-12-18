@@ -1,0 +1,178 @@
+/* MODALES PERSONALIZADOS */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.custom-modal-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-modal-content {
+  background-color: #ffff;
+  padding: 30px;
+  width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  transform: scale(0.95);
+  opacity: 0;
+  animation: modal-appear 0.3s forwards;
+}
+
+@keyframes modal-appear {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.order-opacing {
+  color: #8a8a8a;
+}
+
+.modal-body-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc; */
+  /* padding: 10px 0px; */
+  /* gap: 20px; */
+}
+
+.grid-title-column {
+    /* 1. SEPARACIÓN HORIZONTAL: Borde inferior para separar el título de los datos */
+    border-bottom: 1px solid #e5e7eb; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; /* Espacio entre el borde y el primer dato (p) */
+}
+
+
+
+.summary-section p {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(46, 46, 46);
+  font-size: 0.85rem;
+}
+
+.summary-section strong {
+  font-weight: 600;
+  color: #919191;
+}
+
+.address-section p {
+  display: flex;
+  justify-content: space-between;
+  color: #2e2e2e;
+  font-size: 0.85rem;
+}
+
+.address-section strong {
+  font-weight: 600;
+  color: #919191;
+}
+
+.title-details {
+  font-size: 1rem;
+  gap: 5px;
+  margin: 0px;
+}
+
+.status-badge {
+  /* padding: 5px; */
+  background-color: transparent;
+  color: #2e2e2e;
+}
+
+.products-section h4 {
+  font-size: 1rem;
+  /* color: red; */
+  margin: 0px;
+}
+
+/* GRID PARA EL LISTADO DE PRODUCTOS:  */
+
+.title-items-product {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 0px;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.item-list {
+    display: grid;
+    /* 🔴 CORRECCIÓN CLAVE: Definir 3 columnas con proporciones adecuadas */
+    grid-template-columns: 3fr 1fr 1.5fr; 
+    gap: 10px; /* Espacio entre columnas */
+    
+    /* Añadir separación visual para que se asemeje a una tabla */
+    padding-top: 10px;
+}
+
+/* Estilos para el encabezado de la lista de productos */
+.item-header {
+    /* Usamos display: contents para que los hijos se comporten como celdas del grid */
+    display: contents; 
+    font-weight: 600;
+    color: #6b7280; /* Usamos un gris sutil */
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Asegurar alineación para la Cantidad y Precio en el encabezado */
+.item-header div:nth-child(2) { /* Cantidad */
+    text-align: center; 
+}
+.item-header div:nth-child(3) { /* Precio */
+    text-align: right; 
+}
+
+/* Estilos para las filas de productos */
+.item-row {
+    /* Usamos display: contents para que los hijos se comporten como celdas del grid */
+    display: contents; 
+    border-bottom: 1px solid #e5e7eb; /* Separador sutil entre filas */
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Estilo para los span dentro de item-row para asegurar la alineación */
+.item-row span {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Alineación de datos en las columnas */
+.item-row .item-qty {
+    justify-content: center; /* Centrar Cantidad */
+    color: #6b7280;
+}
+.item-row .item-price {
+    justify-content: flex-end; /* Alinear Precio a la derecha */
+    font-weight: 600;
+}
+
+/* SECTION DE LOS PRECIOS TOTALES */
+.totals-section {
+  border-top: 1px solid #b4b4b4;
+  padding: 10px 0px;
+}

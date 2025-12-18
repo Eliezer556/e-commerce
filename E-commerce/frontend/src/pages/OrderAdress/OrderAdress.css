@@ -1,0 +1,89 @@
+.container-order form {
+    gap: 10px;
+}
+
+.container-img-envio {
+    width: 150px ;
+    height: 100px;
+}
+
+.container-img-envio img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.title-envio-img {
+    display: flex;
+    max-width: 220px;
+    text-align: baseline;
+}
+
+.form-field {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.form-field select {
+    background-color: transparent;
+    color: #707070;
+}
+
+.container-order .input-submit {
+    display: block;
+    margin: 5px 0px;
+}
+
+.title-container-order {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+/* INPUTS AJUSTADOS */
+/* Estilos adicionales para que los campos compartan el espacio 50/50 */
+.input-wrapper {
+    /* Permite que el contenedor crezca y ocupe el espacio disponible */
+    flex-grow: 1; 
+    /* Asegura que el contenedor no sea más pequeño que lo que necesita */
+    flex-basis: 0; 
+    /* Esta combinación con 'flex-grow: 1' garantiza la distribución equitativa (50%) */
+    min-width: 0; 
+    display: flex; /* Lo convertimos en flex para alinear input/error */
+    flex-direction: column; 
+}
+
+/* Regla para asegurar que los inputs y errores internos ocupen todo el 50% */
+.input-wrapper .input-submit,
+.input-wrapper .error-text {
+    width: 100%;
+    /* Asegura que el padding no desborde el contenedor */
+    box-sizing: border-box; 
+}
+
+/* Si una fila debe ser 100% de ancho (como el select de ciudad) */
+.input-wrapper.full-width {
+    width: 100%;
+    flex-grow: 1;
+    /* Evita que otros input-wrapper se pongan a su lado si el form-field es flex */
+    flex-basis: 100%; 
+}
+
+.cart-empty-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    /* height: 600px; */
+}
+
+.cart-empty-content .cart-empty {
+    width: 330px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 50%;
+}

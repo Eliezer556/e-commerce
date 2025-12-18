@@ -1,0 +1,251 @@
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #ffffff;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Sección superior */
+.footer-top {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid #404040;
+}
+
+.footer-top .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    color: #3b82f6;
+    width: 32px;
+    height: 32px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-description {
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #404040;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #3b82f6;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.contact-item svg {
+    color: #3b82f6;
+}
+
+/* Sección de características */
+.features-section {
+    padding: 40px 0;
+    background: #252525;
+}
+
+.features-section .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-item svg {
+    color: #3b82f6;
+    flex-shrink: 0;
+}
+
+.feature-text h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.feature-text p {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin: 0;
+}
+
+/* Sección inferior */
+.footer-bottom {
+    padding: 25px 0;
+    background: #1a1a1a;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.copyright {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #3b82f6;
+}
+
+.debug-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .features-section .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+    }
+    
+    .feature-item {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-top {
+        padding: 40px 0 30px;
+    }
+    
+    .features-section {
+        padding: 30px 0;
+    }
+    
+    .footer-container {
+        padding: 0 15px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,278 @@
+/* Overlay para cerrar al hacer click fuera */
+.cart-dropdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 998;
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    margin-top: 10px;
+    cursor: default; /* ← RESETEA el cursor dentro del dropdown */
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    flex-direction: column;
+    cursor: default; /* ← RESETEA el cursor en el header */
+}
+
+/* BOTÓN DEL CARRITO - SOLO ESTE TIENE cursor: pointer */
+.cart-dropdown-container .cart-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer; /* ← SOLO el botón del carrito tiene pointer */
+    padding: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius);
+}
+
+.cart-dropdown-container .cart-toggle-btn:hover {
+    background-color: var(--gray-100);
+    color: var(--primary-color);
+}
+
+.reset-cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart-title-container h3 {
+    margin: 0px;
+}
+
+.cart-title-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; /* ← Botones del header SÍ pueden tener pointer */
+}
+
+.reset-cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff4444;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    /* letter-spacing: 0.1rem; */
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.reset-cart-btn:hover {
+    background-color: #df4141;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer; /* ← Botón cerrar SÍ tiene pointer */
+    display: inline-block;
+}
+
+.cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 1rem;
+    cursor: default; /* ← RESETEA el cursor en los items */
+}
+
+.cart-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+    cursor: default; /* ← RESETEA el cursor en cada item */
+}
+
+.cart-item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.item-name {
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.item-cuantity {
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.item-price {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff4444;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-delete,
+.btn-add {
+    display: flex;
+}
+
+.btn-delete {
+    color: white;
+    background-color: #ff4444;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer; /* ← Botones de acción SÍ tienen pointer */
+    font-weight: bold;
+}
+
+.btn-delete:hover {
+    transition: 0.2s;
+    background-color: #df4141;
+}
+
+.btn-add {
+    color: white;
+    background-color: rgb(56, 210, 95);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer; /* ← Botones de acción SÍ tienen pointer */
+    font-weight: bold;
+}
+
+.btn-add:hover {
+    transition: 0.2s;
+    background-color: rgb(56, 187, 89);
+}
+
+/* COMPRAR CARRITP */
+
+.cart-item-buy {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-total-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7px;
+}
+
+.cart-total-price .p, .span{
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.cart-btn-buy {
+    display: flex;
+    width: 100%;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    justify-content: center;
+}
+
+.cart-btn-buy .btn-order-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000; /* Tu color principal */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-order-primary.disabled,
+.btn-order-primary:disabled {
+    background-color: #ccc; /* Color grisáceo */
+    color: #666;
+    cursor: not-allowed; /* El cursor muestra el símbolo de prohibido */
+    opacity: 0.7;
+    pointer-events: none; /* Asegura que no haya clicks accidentales */
+}
+
+.cart-btn-buy button:hover {
+    background-color: #245fbf;
+}
