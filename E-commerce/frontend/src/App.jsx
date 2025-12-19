@@ -2,7 +2,6 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home/Home';
 import { ProductList } from './components/features/Product/ProductList';
-import { FiltersProvider } from './context/filtersContext';
 import { CartProvider } from './context/CartContext';
 import { AuthLayout } from './components/layout/AuthLayout';
 import { AppLayout } from './components/layout/AppLayout';
@@ -16,6 +15,7 @@ import { PerfilUser } from './pages/PerfilUser/PerfilUser';
 import { PerfilUserLayout } from './components/layout/PerfilUserLayout';
 import { MyPerfilDetails } from './components/features/MyPerfilDetails/MyPerfilDetails';
 import { MyOrders } from './components/features/MyOrders/MyOrders';
+import { FiltersProvider } from './context/FiltersContext';
 
 function App() {
 
