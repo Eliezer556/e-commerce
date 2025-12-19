@@ -156,7 +156,9 @@ CORS_ALLOWED_ORIGINS = [
     "https://e-commerce-nine-amber-50.vercel.app",
 ]
 
-CORS_ALLOW_CREDENTIALS = False
+CORS_ALLOW_ALL_ORIGINS = False
+
+CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_HEADERS = [
     'accept',
