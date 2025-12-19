@@ -1,0 +1,1850 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "0wkelndz0vhtuhxkxlymxqqqxiksqyf3",
+  "fields": {
+    "session_data": ".eJxVjLsOAiEURP-F2hAuIA9Le7-BXOAiqwaSZbcy_ru7yRbaTDHnzLxZwHWpYR00hymzCwN2-u0ipie1HeQHtnvnqbdlniLfFX7QwW890-t6uH8HFUfd1kkLLRRGZ4r0yiF5DURF2xgzIvhsk7fOGxAqgysGoha-2LPcwhkp2OcL4Kc3Vw:1vSjRn:UBXXF24JYNGdwJTdxiAulDc_jeQ51scTb1za6b8Aak8",
+    "expire_date": "2025-12-22T22:11:11.206Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9dy70bgnvpod5ryb915hnppv01mxejag",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBmKKW4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWIE6_W6D44LqDdKd6azK2ui5zkLsiD9rltSV-Xg7376BQL986uzFlZu2mRKA4W42QUaOyCqxxaJUJblBmNClDVJkGRNRTdACGA5J4fwDQoTcG:1v4LBv:ar7JKy5vHEF-kasH7Kz9IzmP7Oej12rvuQvlgfaDU5c",
+    "expire_date": "2025-10-16T15:25:59.762Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "a4q43a50yc82woeorqyooem16n8e1gri",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBmKKW4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWIE6_W6D44LqDdKd6azK2ui5zkLsiD9rltSV-Xg7376BQL986uzFlZu2mRKA4W42QUaOyCqxxaJUJblBmNClDVJkGRNRTdACGA5J4fwDQoTcG:1uysm4:wmt6qW0R79BgsF643BsuIiaSU_29yL-jXOR2KpuMau4",
+    "expire_date": "2025-10-01T14:04:44.833Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fh22mxaok7nrde6rj1ttv05y3qz231kj",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBmKKW4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWIE6_W6D44LqDdKd6azK2ui5zkLsiD9rltSV-Xg7376BQL986uzFlZu2mRKA4W42QUaOyCqxxaJUJblBmNClDVJkGRNRTdACGA5J4fwDQoTcG:1vByrW:lzaxfGgBRd8038HJ4PwUGqxx3t_Z2c6-SigPIQVyb3k",
+    "expire_date": "2025-11-06T17:12:30.807Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "la3rscdpcwqcdhku894vt6nmv41qdbel",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBmKKW4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWIE6_W6D44LqDdKd6azK2ui5zkLsiD9rltSV-Xg7376BQL986uzFlZu2mRKA4W42QUaOyCqxxaJUJblBmNClDVJkGRNRTdACGA5J4fwDQoTcG:1v6tLj:NRZaZ545sjHUD4YGNRzhntIinu4-ngpPHYWD-Jmgh94",
+    "expire_date": "2025-10-23T16:18:39.843Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m9k934kvd94ifxelbe7qm34yfdclihaq",
+  "fields": {
+    "session_data": ".eJxVjLsOAiEURP-F2hAuIA9Le7-BXOAiqwaSZbcy_ru7yRbaTDHnzLxZwHWpYR00hymzCwN2-u0ipie1HeQHtnvnqbdlniLfFX7QwW890-t6uH8HFUfd1kkLLRRGZ4r0yiF5DURF2xgzIvhsk7fOGxAqgysGoha-2LPcwhkp2OcL4Kc3Vw:1vRtxv:RV8m-PQPpCmZ0PxvpUtByf-4KTdP60ga8JmxEO3VDSg",
+    "expire_date": "2025-12-20T15:12:55.161Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vve5tebboyngfan3747mo2r09dqgdryr",
+  "fields": {
+    "session_data": ".eJxVjLsOAiEURP-F2hAuIA9Le7-BXOAiqwaSZbcy_ru7yRbaTDHnzLxZwHWpYR00hymzCwN2-u0ipie1HeQHtnvnqbdlniLfFX7QwW890-t6uH8HFUfd1kkLLRRGZ4r0yiF5DURF2xgzIvhsk7fOGxAqgysGoha-2LPcwhkp2OcL4Kc3Vw:1vLTlL:MqigNSej1Ytjlv4tyJwj6utUcUco4I4YJMfD8AJlZtQ",
+    "expire_date": "2025-12-02T22:01:23.466Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wjgxmy2iupcg4yh4kmd145tctva1thzg",
+  "fields": {
+    "session_data": ".eJxVjLsOAiEURP-F2hAuIA9Le7-BXOAiqwaSZbcy_ru7yRbaTDHnzLxZwHWpYR00hymzCwN2-u0ipie1HeQHtnvnqbdlniLfFX7QwW890-t6uH8HFUfd1kkLLRRGZ4r0yiF5DURF2xgzIvhsk7fOGxAqgysGoha-2LPcwhkp2OcL4Kc3Vw:1vH6pJ:wdS4dbQ2Czu36Vma9LGbcZAYkPajmxo5BHF1NQzTUwc",
+    "expire_date": "2025-11-20T20:43:25.186Z"
+  }
+},
+{
+  "model": "products.categorias",
+  "pk": 1,
+  "fields": {
+    "name": "Electronicos",
+    "descripcion": "",
+    "fecha_creacion": "2025-09-17T16:07:40Z"
+  }
+},
+{
+  "model": "products.categorias",
+  "pk": 2,
+  "fields": {
+    "name": "Electrodomesticos",
+    "descripcion": "categorias de electrodomesticos",
+    "fecha_creacion": "2025-09-18T18:58:22Z"
+  }
+},
+{
+  "model": "products.categorias",
+  "pk": 3,
+  "fields": {
+    "name": "Mobiliarios",
+    "descripcion": "muebles, sillas, mesas, bancos",
+    "fecha_creacion": "2025-09-25T16:09:48Z"
+  }
+},
+{
+  "model": "products.categorias",
+  "pk": 4,
+  "fields": {
+    "name": "Resposteria",
+    "descripcion": "categoria para productos de resposteria",
+    "fecha_creacion": "2025-09-25T16:41:05Z"
+  }
+},
+{
+  "model": "products.categorias",
+  "pk": 5,
+  "fields": {
+    "name": "Ropa",
+    "descripcion": "camisas, vestidos, zapatos, pantalones",
+    "fecha_creacion": "2025-09-25T17:25:48Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 1,
+  "fields": {
+    "name": "iPhone X 64GB",
+    "categoria": 1,
+    "descripcion": "",
+    "precio": "350.00",
+    "estado": "disponile",
+    "img": "productos/p1_qjzINal.png",
+    "fecha_creacion": "2025-09-17T16:08:06Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 2,
+  "fields": {
+    "name": "Audífonos Inálambrico",
+    "categoria": 1,
+    "descripcion": "audifonos inalambricos por bluetooth",
+    "precio": "158.00",
+    "estado": "oferta",
+    "img": "productos/p2_MbnvL4N_b117odj.png",
+    "fecha_creacion": "2025-09-17T16:12:18Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 3,
+  "fields": {
+    "name": "Lavadora Haceb 23KG",
+    "categoria": 2,
+    "descripcion": "",
+    "precio": "400.00",
+    "estado": "disponile",
+    "img": "productos/p3.png",
+    "fecha_creacion": "2025-09-18T18:59:20Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 4,
+  "fields": {
+    "name": "Licuadora Osterizer 4126",
+    "categoria": 2,
+    "descripcion": "Licuadora Osterizer de casa",
+    "precio": "250.00",
+    "estado": "disponile",
+    "img": "productos/p4-removebg-preview.png",
+    "fecha_creacion": "2025-09-18T21:36:48Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 5,
+  "fields": {
+    "name": "Mesa de madera",
+    "categoria": 3,
+    "descripcion": "mesa de madera color claro",
+    "precio": "115.00",
+    "estado": "oferta",
+    "img": "productos/p5.png",
+    "fecha_creacion": "2025-09-25T16:10:16Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 6,
+  "fields": {
+    "name": "Taladro Percutor 1/2\" 4.7AMP",
+    "categoria": 1,
+    "descripcion": "TALADRO PERCUTOR 1/2\" 4.7AMP 550W ## PRO-",
+    "precio": "125.00",
+    "estado": "oferta",
+    "img": "productos/p6_ctGQ1SC.png",
+    "fecha_creacion": "2025-09-25T16:20:51Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 7,
+  "fields": {
+    "name": "AS ELECTRO Ventilador",
+    "categoria": 2,
+    "descripcion": "Ventilador 3 en 1 de 18W",
+    "precio": "60.00",
+    "estado": "oferta",
+    "img": "productos/p7.png",
+    "fecha_creacion": "2025-09-25T16:36:25Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 8,
+  "fields": {
+    "name": "Muebles marron",
+    "categoria": 3,
+    "descripcion": "muebles color marron",
+    "precio": "200.00",
+    "estado": "oferta",
+    "img": "productos/p8.png",
+    "fecha_creacion": "2025-09-25T16:38:56Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 9,
+  "fields": {
+    "name": "Molde para gelatinas",
+    "categoria": 4,
+    "descripcion": "molde de gelatina gris",
+    "precio": "50.00",
+    "estado": "oferta",
+    "img": "productos/p9.png",
+    "fecha_creacion": "2025-09-25T16:41:21Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 10,
+  "fields": {
+    "name": "Camisa azul",
+    "categoria": 5,
+    "descripcion": "camisa manga larga azul",
+    "precio": "15.00",
+    "estado": "oferta",
+    "img": "productos/p10.png",
+    "fecha_creacion": "2025-09-25T17:30:40Z"
+  }
+},
+{
+  "model": "products.productos",
+  "pk": 11,
+  "fields": {
+    "name": "Franela negra",
+    "categoria": 5,
+    "descripcion": "franela negra talla m",
+    "precio": "8.00",
+    "estado": "oferta",
+    "img": "productos/p11.png",
+    "fecha_creacion": "2025-09-25T17:32:42Z"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 1,
+  "fields": {
+    "pedido": 1,
+    "producto": 1,
+    "cantidad": 1,
+    "precio_unitario": "350.00",
+    "nombre_producto": "iPhone X 64GB"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 2,
+  "fields": {
+    "pedido": 1,
+    "producto": 2,
+    "cantidad": 1,
+    "precio_unitario": "158.00",
+    "nombre_producto": "Audífonos Inálambrico"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 3,
+  "fields": {
+    "pedido": 1,
+    "producto": 3,
+    "cantidad": 1,
+    "precio_unitario": "400.00",
+    "nombre_producto": "Lavadora Haceb 23KG"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 4,
+  "fields": {
+    "pedido": 1,
+    "producto": 6,
+    "cantidad": 1,
+    "precio_unitario": "125.00",
+    "nombre_producto": "Taladro Percutor 1/2\" 4.7AMP"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 5,
+  "fields": {
+    "pedido": 1,
+    "producto": 5,
+    "cantidad": 1,
+    "precio_unitario": "115.00",
+    "nombre_producto": "Mesa de madera"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 6,
+  "fields": {
+    "pedido": 1,
+    "producto": 4,
+    "cantidad": 1,
+    "precio_unitario": "250.00",
+    "nombre_producto": "Licuadora Osterizer 4126"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 7,
+  "fields": {
+    "pedido": 1,
+    "producto": 8,
+    "cantidad": 1,
+    "precio_unitario": "200.00",
+    "nombre_producto": "Muebles marron"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 8,
+  "fields": {
+    "pedido": 1,
+    "producto": 7,
+    "cantidad": 1,
+    "precio_unitario": "60.00",
+    "nombre_producto": "AS ELECTRO Ventilador"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 9,
+  "fields": {
+    "pedido": 1,
+    "producto": 10,
+    "cantidad": 1,
+    "precio_unitario": "15.00",
+    "nombre_producto": "Camisa azul"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 10,
+  "fields": {
+    "pedido": 1,
+    "producto": 11,
+    "cantidad": 1,
+    "precio_unitario": "8.00",
+    "nombre_producto": "Franela negra"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 11,
+  "fields": {
+    "pedido": 2,
+    "producto": 1,
+    "cantidad": 1,
+    "precio_unitario": "350.00",
+    "nombre_producto": "iPhone X 64GB"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 12,
+  "fields": {
+    "pedido": 2,
+    "producto": 2,
+    "cantidad": 1,
+    "precio_unitario": "158.00",
+    "nombre_producto": "Audífonos Inálambrico"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 13,
+  "fields": {
+    "pedido": 2,
+    "producto": 3,
+    "cantidad": 1,
+    "precio_unitario": "400.00",
+    "nombre_producto": "Lavadora Haceb 23KG"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 14,
+  "fields": {
+    "pedido": 2,
+    "producto": 6,
+    "cantidad": 1,
+    "precio_unitario": "125.00",
+    "nombre_producto": "Taladro Percutor 1/2\" 4.7AMP"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 15,
+  "fields": {
+    "pedido": 2,
+    "producto": 5,
+    "cantidad": 1,
+    "precio_unitario": "115.00",
+    "nombre_producto": "Mesa de madera"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 16,
+  "fields": {
+    "pedido": 2,
+    "producto": 4,
+    "cantidad": 1,
+    "precio_unitario": "250.00",
+    "nombre_producto": "Licuadora Osterizer 4126"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 17,
+  "fields": {
+    "pedido": 2,
+    "producto": 8,
+    "cantidad": 1,
+    "precio_unitario": "200.00",
+    "nombre_producto": "Muebles marron"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 18,
+  "fields": {
+    "pedido": 2,
+    "producto": 7,
+    "cantidad": 1,
+    "precio_unitario": "60.00",
+    "nombre_producto": "AS ELECTRO Ventilador"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 19,
+  "fields": {
+    "pedido": 2,
+    "producto": 10,
+    "cantidad": 1,
+    "precio_unitario": "15.00",
+    "nombre_producto": "Camisa azul"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 20,
+  "fields": {
+    "pedido": 2,
+    "producto": 11,
+    "cantidad": 1,
+    "precio_unitario": "8.00",
+    "nombre_producto": "Franela negra"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 21,
+  "fields": {
+    "pedido": 3,
+    "producto": 2,
+    "cantidad": 1,
+    "precio_unitario": "158.00",
+    "nombre_producto": "Audífonos Inálambrico"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 22,
+  "fields": {
+    "pedido": 3,
+    "producto": 3,
+    "cantidad": 1,
+    "precio_unitario": "400.00",
+    "nombre_producto": "Lavadora Haceb 23KG"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 23,
+  "fields": {
+    "pedido": 3,
+    "producto": 6,
+    "cantidad": 1,
+    "precio_unitario": "125.00",
+    "nombre_producto": "Taladro Percutor 1/2\" 4.7AMP"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 24,
+  "fields": {
+    "pedido": 3,
+    "producto": 5,
+    "cantidad": 1,
+    "precio_unitario": "115.00",
+    "nombre_producto": "Mesa de madera"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 25,
+  "fields": {
+    "pedido": 3,
+    "producto": 4,
+    "cantidad": 1,
+    "precio_unitario": "250.00",
+    "nombre_producto": "Licuadora Osterizer 4126"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 26,
+  "fields": {
+    "pedido": 3,
+    "producto": 8,
+    "cantidad": 1,
+    "precio_unitario": "200.00",
+    "nombre_producto": "Muebles marron"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 27,
+  "fields": {
+    "pedido": 3,
+    "producto": 7,
+    "cantidad": 1,
+    "precio_unitario": "60.00",
+    "nombre_producto": "AS ELECTRO Ventilador"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 28,
+  "fields": {
+    "pedido": 3,
+    "producto": 10,
+    "cantidad": 1,
+    "precio_unitario": "15.00",
+    "nombre_producto": "Camisa azul"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 29,
+  "fields": {
+    "pedido": 3,
+    "producto": 11,
+    "cantidad": 1,
+    "precio_unitario": "8.00",
+    "nombre_producto": "Franela negra"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 30,
+  "fields": {
+    "pedido": 4,
+    "producto": 11,
+    "cantidad": 1,
+    "precio_unitario": "8.00",
+    "nombre_producto": "Franela negra"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 31,
+  "fields": {
+    "pedido": 4,
+    "producto": 10,
+    "cantidad": 1,
+    "precio_unitario": "15.00",
+    "nombre_producto": "Camisa azul"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 32,
+  "fields": {
+    "pedido": 4,
+    "producto": 6,
+    "cantidad": 1,
+    "precio_unitario": "125.00",
+    "nombre_producto": "Taladro Percutor 1/2\" 4.7AMP"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 33,
+  "fields": {
+    "pedido": 4,
+    "producto": 5,
+    "cantidad": 1,
+    "precio_unitario": "115.00",
+    "nombre_producto": "Mesa de madera"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 34,
+  "fields": {
+    "pedido": 5,
+    "producto": 4,
+    "cantidad": 1,
+    "precio_unitario": "250.00",
+    "nombre_producto": "Licuadora Osterizer 4126"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 35,
+  "fields": {
+    "pedido": 5,
+    "producto": 5,
+    "cantidad": 1,
+    "precio_unitario": "115.00",
+    "nombre_producto": "Mesa de madera"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 36,
+  "fields": {
+    "pedido": 5,
+    "producto": 6,
+    "cantidad": 1,
+    "precio_unitario": "125.00",
+    "nombre_producto": "Taladro Percutor 1/2\" 4.7AMP"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 37,
+  "fields": {
+    "pedido": 5,
+    "producto": 9,
+    "cantidad": 1,
+    "precio_unitario": "50.00",
+    "nombre_producto": "Molde para gelatinas"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 38,
+  "fields": {
+    "pedido": 5,
+    "producto": 8,
+    "cantidad": 1,
+    "precio_unitario": "200.00",
+    "nombre_producto": "Muebles marron"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 39,
+  "fields": {
+    "pedido": 5,
+    "producto": 7,
+    "cantidad": 1,
+    "precio_unitario": "60.00",
+    "nombre_producto": "AS ELECTRO Ventilador"
+  }
+},
+{
+  "model": "orders.itempedido",
+  "pk": 40,
+  "fields": {
+    "pedido": 5,
+    "producto": 10,
+    "cantidad": 1,
+    "precio_unitario": "15.00",
+    "nombre_producto": "Camisa azul"
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$1VJbV6es46cI4amjAvdhDX$1GwYJJnkhDrmpDbZLlnYyq9iGOnXeNadYSjI0PGQrLE=",
+    "last_login": "2025-12-08T22:11:11Z",
+    "is_superuser": true,
+    "first_name": "eliezer",
+    "last_name": "motta",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-09-17T14:04:01Z",
+    "email": "eliezerdma556@gmail.com",
+    "telefono": "04243152253",
+    "fecha_nacimiento": null,
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/Screenshot_2023-05-05-07-32-17-171_com.whatsapp.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$YI0LoOyNZgwAaLODMTN4Lz$SM0cGdotx6P9g4aO7zRPbOaGimHjezcFxdYdmOAB8B0=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "pedro",
+    "last_name": "castro",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-08T19:24:17.902Z",
+    "email": "pedro@gmail.com",
+    "telefono": "04243152253",
+    "fecha_nacimiento": "1992-09-09",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$monlYCjqAEdJDB6Bdf7zZI$VAUTFzQNaqwxRAJ9QNrvIHXVgkA+L31bN3cU0fzRrAg=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "jozu",
+    "last_name": "byc",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-08T20:15:56.065Z",
+    "email": "jozubyc@gmail.com",
+    "telefono": "123123123123",
+    "fecha_nacimiento": "2002-08-06",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$hsNBQ1diuQ8121OyTpz0AO$ybV5cH52krhTrUL1xAOWmVrklsc9TD3i2dj1Rj8I7JA=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "alejandro",
+    "last_name": "duran",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-09T21:16:12.527Z",
+    "email": "ale@gmail.com",
+    "telefono": "123123123123123",
+    "fecha_nacimiento": "1999-02-01",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$XsYnDMeyhHP7U9Pyb1QnPt$r1nKs5DYiRfe79XgvIYGBHce06QJA9Jn0LY77PHj8yU=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "julian",
+    "last_name": "alvares",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-09T21:20:34.849Z",
+    "email": "julian@gmail.com",
+    "telefono": "123123123123",
+    "fecha_nacimiento": "2001-11-14",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Y77GnirIJyqjFot3GHtjuj$evcbIGhqnToMJ5ZSEhK/0mMaPE13uZo2dMAQFHjkevk=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "juan",
+    "last_name": "carlos",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-10T14:35:10.728Z",
+    "email": "juan@gmail.com",
+    "telefono": "123123123123",
+    "fecha_nacimiento": "1876-03-12",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$OxKSFPdMKZxxPJG5a0P8Nc$VEEC1cG3p9BUc56lxMlnG+9M+wlHieWpAcUgNERbgCY=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "sabrina",
+    "last_name": "carpenter",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-22T16:22:45.149Z",
+    "email": "sabrina55@gmail.com",
+    "telefono": "6893094345",
+    "fecha_nacimiento": "1999-12-12",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$WkFratdU70vzoGeBHMBFxp$RZ65/9hwSDMRlNJSGTZe+SziL9lppTryREgheHzEHQc=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "anthony",
+    "last_name": "herrera",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-08T22:07:06.436Z",
+    "email": "anthony@gmail.com",
+    "telefono": "0412335449",
+    "fecha_nacimiento": "2000-10-15",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.usuario",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$KP8lok2UVZHh6bfSjLyDaf$G9B6DSUiPZAJezPOskZfUJsdPwnNCAVRIhLuXSJPhy8=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "anonimo",
+    "last_name": "anonimo",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-12-18T18:44:24.636Z",
+    "email": "anonimo123@gmail.com",
+    "telefono": "123123123",
+    "fecha_nacimiento": "1999-12-12",
+    "email_verificado": false,
+    "foto_perfil": "profile_pics/default.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-09-17T16:07:43.550Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "categorias"
+    ],
+    "object_id": "1",
+    "object_repr": "Electronicos",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-09-17T16:08:08.885Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "1",
+    "object_repr": "iPhone X 64GB",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-09-17T16:12:20.194Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "2",
+    "object_repr": "Audífonos Inálambrico",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-09-18T18:58:23.318Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "categorias"
+    ],
+    "object_id": "2",
+    "object_repr": "Electrodomesticos",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-09-18T18:59:21.331Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "3",
+    "object_repr": "Lavadora Haceb 23KG",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-09-18T18:59:57.201Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "2",
+    "object_repr": "Audífonos Inálambrico",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-09-18T19:00:18.275Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "1",
+    "object_repr": "iPhone X 64GB",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-09-18T21:36:50.427Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "4",
+    "object_repr": "Licuadora Osterizer 4126",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-09-25T16:09:49.775Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "categorias"
+    ],
+    "object_id": "3",
+    "object_repr": "Mobiliarios",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-09-25T16:10:18.164Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "5",
+    "object_repr": "Mesa de madera",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-09-25T16:17:50.625Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "5",
+    "object_repr": "Mesa de madera",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-09-25T16:20:52.647Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "6",
+    "object_repr": "Taladro Percutor 1/2\" 4.7AMP",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-09-25T16:29:16.700Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "5",
+    "object_repr": "Mesa de madera",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-09-25T16:30:07.471Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "6",
+    "object_repr": "Taladro Percutor 1/2\" 4.7AMP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-09-25T16:32:52.502Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "3",
+    "object_repr": "Lavadora Haceb 23KG",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-09-25T16:33:17.010Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "6",
+    "object_repr": "Taladro Percutor 1/2\" 4.7AMP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-09-25T16:34:06.666Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "2",
+    "object_repr": "Audífonos Inálambrico",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-09-25T16:34:30.849Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "1",
+    "object_repr": "iPhone X 64GB",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Img\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-09-25T16:36:26.484Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "7",
+    "object_repr": "AS ELECTRO VENTILADOR",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-09-25T16:36:41.947Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "7",
+    "object_repr": "AS ELECTRO Ventilador",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-09-25T16:38:57.069Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "8",
+    "object_repr": "Muebles marron",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-09-25T16:41:06.148Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "categorias"
+    ],
+    "object_id": "4",
+    "object_repr": "Resposteria",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-09-25T16:41:25.845Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "9",
+    "object_repr": "Molde para gelatinas",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-09-25T17:25:48.951Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "categorias"
+    ],
+    "object_id": "5",
+    "object_repr": "Ropa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-09-25T17:30:42.091Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "10",
+    "object_repr": "Camisa azul",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-09-25T17:32:43.335Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "11",
+    "object_repr": "Franela negra",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-10-13T23:03:25.780Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "11",
+    "object_repr": "Franela negra",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-10-13T23:04:36.556Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "10",
+    "object_repr": "Camisa azul",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-10-13T23:04:40.021Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "9",
+    "object_repr": "Molde para gelatinas",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-10-13T23:04:43.231Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "8",
+    "object_repr": "Muebles marron",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-10-13T23:04:46.593Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "7",
+    "object_repr": "AS ELECTRO Ventilador",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-10-13T23:04:49.284Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "6",
+    "object_repr": "Taladro Percutor 1/2\" 4.7AMP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-10-13T23:04:53.859Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "5",
+    "object_repr": "Mesa de madera",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-10-13T23:04:58.756Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "4",
+    "object_repr": "Licuadora Osterizer 4126",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-10-13T23:05:01.887Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "3",
+    "object_repr": "Lavadora Haceb 23KG",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-10-13T23:05:05.241Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "2",
+    "object_repr": "Audífonos Inálambrico",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-10-13T23:05:07.862Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "1",
+    "object_repr": "iPhone X 64GB",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-10-22T17:06:09.227Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "11",
+    "object_repr": "Franela negra",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-10-22T17:06:46.749Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "8",
+    "object_repr": "Muebles marron",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-10-22T17:07:00.130Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "2",
+    "object_repr": "Audífonos Inálambrico",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-10-22T17:44:28.587Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "5",
+    "object_repr": "Mesa de madera",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-10-23T17:12:54.946Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "10",
+    "object_repr": "Camisa azul",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-10-23T17:13:01.064Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "9",
+    "object_repr": "Molde para gelatinas",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-10-23T17:13:09.353Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "7",
+    "object_repr": "AS ELECTRO Ventilador",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-10-23T17:13:24.298Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "products",
+      "productos"
+    ],
+    "object_id": "6",
+    "object_repr": "Taladro Percutor 1/2\" 4.7AMP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-12-01T22:00:11.656Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "orders",
+      "pedido"
+    ],
+    "object_id": "4",
+    "object_repr": "Pedido ORD-20251130-000004 - eliezerdma556@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-12-09T16:24:45.773Z",
+    "user": [
+      "eliezerdma556@gmail.com"
+    ],
+    "content_type": [
+      "users",
+      "usuario"
+    ],
+    "object_id": "1",
+    "object_repr": "eliezer motta - eliezerdma556@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Telefono\"]}}]"
+  }
+},
+{
+  "model": "orders.pedido",
+  "pk": 1,
+  "fields": {
+    "usuario": [
+      "eliezerdma556@gmail.com"
+    ],
+    "numero_pedido": "ORD-20251125-000001",
+    "estado": "pendiente",
+    "direccion_envio": {
+      "codigo_postal": "123",
+      "fecha": "2025-11-27",
+      "ciudad": "Maracay",
+      "numero_de_casa": "123",
+      "calle": "Fuerzas aereas"
+    },
+    "subtotal": "1681.00",
+    "impuesto": "268.96",
+    "envio": "0.00",
+    "descuento": "0.00",
+    "total": "1949.96",
+    "fecha_creacion": "2025-11-26T02:29:14.977Z",
+    "fecha_actualizacion": "2025-11-26T02:29:14.987Z",
+    "fecha_entrega": null
+  }
+},
+{
+  "model": "orders.pedido",
+  "pk": 2,
+  "fields": {
+    "usuario": [
+      "eliezerdma556@gmail.com"
+    ],
+    "numero_pedido": "ORD-20251127-000002",
+    "estado": "pendiente",
+    "direccion_envio": {
+      "codigo_postal": "0132",
+      "fecha": "2025-11-28",
+      "ciudad": "Barcelona",
+      "numero_de_casa": "#14",
+      "calle": "Fuerzas aereas"
+    },
+    "subtotal": "1681.00",
+    "impuesto": "268.96",
+    "envio": "0.00",
+    "descuento": "0.00",
+    "total": "1949.96",
+    "fecha_creacion": "2025-11-27T18:09:48.734Z",
+    "fecha_actualizacion": "2025-11-27T18:09:48.781Z",
+    "fecha_entrega": null
+  }
+},
+{
+  "model": "orders.pedido",
+  "pk": 3,
+  "fields": {
+    "usuario": [
+      "eliezerdma556@gmail.com"
+    ],
+    "numero_pedido": "ORD-20251127-000003",
+    "estado": "pendiente",
+    "direccion_envio": {
+      "codigo_postal": "0132",
+      "fecha": "2025-11-28",
+      "ciudad": "Barcelona",
+      "numero_de_casa": "#14",
+      "calle": "Fuerzas aereas"
+    },
+    "subtotal": "1331.00",
+    "impuesto": "212.96",
+    "envio": "0.00",
+    "descuento": "0.00",
+    "total": "1543.96",
+    "fecha_creacion": "2025-11-27T18:17:36.589Z",
+    "fecha_actualizacion": "2025-11-27T18:17:36.603Z",
+    "fecha_entrega": null
+  }
+},
+{
+  "model": "orders.pedido",
+  "pk": 4,
+  "fields": {
+    "usuario": [
+      "eliezerdma556@gmail.com"
+    ],
+    "numero_pedido": "ORD-20251130-000004",
+    "estado": "enviado",
+    "direccion_envio": {
+      "codigo_postal": "4325",
+      "fecha": "2025-12-01",
+      "ciudad": "Valencia",
+      "numero_de_casa": "45",
+      "calle": "Lourdes"
+    },
+    "subtotal": "263.00",
+    "impuesto": "42.08",
+    "envio": "0.00",
+    "descuento": "0.00",
+    "total": "305.08",
+    "fecha_creacion": "2025-11-30T23:25:02.475Z",
+    "fecha_actualizacion": "2025-12-01T22:00:11.645Z",
+    "fecha_entrega": null
+  }
+},
+{
+  "model": "orders.pedido",
+  "pk": 5,
+  "fields": {
+    "usuario": [
+      "eliezerdma556@gmail.com"
+    ],
+    "numero_pedido": "ORD-20251218-000005",
+    "estado": "pendiente",
+    "direccion_envio": {
+      "codigo_postal": "2122",
+      "fecha": "2025-12-26",
+      "ciudad": "Maracaibo",
+      "numero_de_casa": "124",
+      "calle": "12"
+    },
+    "subtotal": "815.00",
+    "impuesto": "130.40",
+    "envio": "0.00",
+    "descuento": "0.00",
+    "total": "945.40",
+    "fecha_creacion": "2025-12-18T18:01:47.656Z",
+    "fecha_actualizacion": "2025-12-18T18:01:47.669Z",
+    "fecha_entrega": null
+  }
+}
+]

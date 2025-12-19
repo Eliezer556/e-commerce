@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 from pathlib import Path
 from pathlib import Path
 from datetime import timedelta
@@ -84,12 +85,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# Configuración de Base de Datos
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        # Formato: postgres://USUARIO:PASSWORD@localhost:5432/NOMBRE_DB
+        default='postgresql://postgres:123@localhost:5432/ecommerce_db',
+        conn_max_age=600
+    )
 }
+
+# sqlite
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
