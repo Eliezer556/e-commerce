@@ -156,7 +156,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://e-commerce-tu-nombre.vercel.app",
 ]
 
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = False
 
 CORS_ALLOW_HEADERS = [
     'accept',
