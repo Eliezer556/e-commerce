@@ -1,10 +1,10 @@
 import { useContext } from "react"
 // import './ProductFilters.css' // ¡Eliminado para usar solo Tailwind!
 import { Search } from "lucide-react"
-import { FiltersContext } from "../../../context/filtersContext"
+import { useFilters } from "../../../context/FiltersContext"
 
 export function ProductFilters() {
-    const { filters, setFilters } = useContext(FiltersContext)
+    const { filters, setFilters } = useFilters()
 
     const handlers = {
         search: (e) => setFilters(prev => ({...prev, search: e.target.value})),
