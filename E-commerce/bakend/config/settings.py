@@ -12,12 +12,12 @@ import sys
 sys.path.append(os.path.join(BASE_DIR, 'apps'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-tyyll=bdh)f(e9huqk2ugvwf93mq!t$qx9icj@ak@=q_!+x+y1'
+SECRET_KEY = os.environ.get('SECRET_KEY', '123')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "*").split(",")
 
 
 # Application definition
@@ -51,6 +51,7 @@ AUTH_USER_MODEL = 'users.Usuario'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     # NUEVA POSICION
     'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -90,7 +91,8 @@ DATABASES = {
     'default': dj_database_url.config(
         # Formato: postgres://USUARIO:PASSWORD@localhost:5432/NOMBRE_DB
         default='postgresql://postgres:123@localhost:5432/ecommerce_db',
-        conn_max_age=600
+        conn_max_age=600,
+        ssl_require=True
     )
 }
 
@@ -150,6 +152,7 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://e-commerce-shkc.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
