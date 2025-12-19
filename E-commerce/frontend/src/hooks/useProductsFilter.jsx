@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useProducts } from "../context/ProductContext";
-import { useFilters } from "../context/filtersContext";
+import { useFilters } from "../context/FiltersContext";
 
 export function useProductsFilter() {
     const { filters } = useFilters()
