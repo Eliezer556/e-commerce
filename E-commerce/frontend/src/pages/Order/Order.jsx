@@ -1,12 +1,14 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import ordersService from '../../services/ordersService';
-import { MapPin, CreditCard, ChevronDown } from 'lucide-react';
+import { MapPin, CreditCard, ChevronDown, CheckCircle2 } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export function Order({ shippingAdress }) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [orderSuccess, setOrderSuccess] = useState(false);
 
     const { cart, resetToCart } = useCart();
     const navigate = useNavigate();
@@ -30,9 +32,9 @@ export function Order({ shippingAdress }) {
 
             const result = await ordersService.createOrder(orderPayload);
 
-            if(result.success){
+            if (result.success) {
                 resetToCart();
-                navigate('/');
+                setOrderSuccess(true);
             } else {
                 let message = result.message || "Error al procesar el pedido.";
                 if (result.errors) {
@@ -48,7 +50,46 @@ export function Order({ shippingAdress }) {
     };
 
     return (
-        <section className="animate-in fade-in duration-500">
+        <section className="relative">
+            {/* MODAL CON Z-INDEX ULTRA ALTO PARA CUBRIR NAVBAR */}
+            {orderSuccess && createPortal(
+                <div className="fixed inset-0 z-[99999] flex items-center justify-center p-4">
+                    {/* Backdrop con opacidad fuerte y desenfoque */}
+                    <div className="absolute inset-0 bg-gray-950/80 backdrop-blur-md animate-in fade-in duration-500" />
+
+                    {/* Contenedor del Modal */}
+                    <div className="relative bg-white w-full max-w-md p-8 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex flex-col items-center text-center animate-in zoom-in slide-in-from-bottom-8 duration-500">
+
+                        <div className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mb-6">
+                            <CheckCircle2 size={56} className="text-green-500" />
+                        </div>
+
+                        <h3 className="text-3xl font-black text-gray-900 mb-3 tracking-tight">¡Éxito Total!</h3>
+                        <p className="text-base text-gray-500 mb-10 leading-relaxed">
+                            Tu pedido ha sido procesado. <br />
+                            Ya puedes consultarlo en tu <strong>perfil</strong>.
+                        </p>
+
+                        <div className="flex flex-col w-full gap-4">
+                            <Link
+                                to="/perfil"
+                                className="w-full py-4 bg-gray-100 text-gray-700 rounded-2xl font-bold hover:bg-gray-200 transition-all text-sm flex items-center justify-center no-underline"
+                            >
+                                Revisar mi Historial
+                            </Link>
+                            <button
+                                onClick={() => navigate('/')}
+                                className="w-full py-4 bg-indigo-600 text-white rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-200 text-sm active:scale-95 border-none cursor-pointer"
+                            >
+                                Finalizar proceso
+                            </button>
+                        </div>
+                    </div>
+                </div>,
+                document.body 
+            )}
+
+            {/* FORMULARIO BASE */}
             <div className="flex flex-col gap-6">
                 <div className="flex items-center justify-center gap-2 border-b pb-4">
                     <h3 className="text-lg font-bold text-gray-800">Resumen de Entrega</h3>
@@ -87,7 +128,7 @@ export function Order({ shippingAdress }) {
                         <CreditCard size={18} className="text-gray-400" />
                         <h5 className="font-bold text-gray-700 text-sm">Método de Pago</h5>
                     </div>
-                    
+
                     <div className="relative group">
                         <select className="w-full p-3 bg-white border border-gray-200 rounded-xl appearance-none outline-none focus:border-indigo-500 transition-all text-sm font-medium text-gray-700 cursor-pointer shadow-sm">
                             <option value="">Seleccionar método...</option>
@@ -111,11 +152,10 @@ export function Order({ shippingAdress }) {
                 )}
 
                 <button
-                    className={`w-full py-4 rounded-xl font-bold transition-all shadow-lg active:scale-95 flex justify-center items-center ${
-                        loading 
-                        ? 'bg-gray-400 text-white cursor-wait' 
-                        : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-indigo-200'
-                    }`}
+                    className={`w-full py-4 rounded-xl font-bold transition-all shadow-lg active:scale-95 flex justify-center items-center ${loading
+                            ? 'bg-gray-400 text-white cursor-wait'
+                            : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-indigo-200'
+                        }`}
                     onClick={handleCreateOrder}
                     disabled={loading}
                 >

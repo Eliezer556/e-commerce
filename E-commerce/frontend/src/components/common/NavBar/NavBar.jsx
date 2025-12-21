@@ -17,6 +17,8 @@ export function NavBar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  /* NUEVO ESTADO PARA EL MENÚ DE USUARIO */
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
   const handleLogout = async () => {
     await logout();
@@ -90,20 +92,47 @@ export function NavBar() {
               <Cart />
             </div>
 
-            <div className="md:block">
+            <div className="md:block relative"> {/* Contenedor del usuario */}
               {isAuthenticated ? (
-                <div className="relative group">
-                  <button className={USER_BTN_CLASSES}>
+                <>
+                  <button 
+                    className={USER_BTN_CLASSES} 
+                    onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                  >
                     <User className="w-5 h-5 text-indigo-500" />
                     <span className="text-sm font-semibold text-gray-800 hidden sm:inline ml-1">
                       Hola, {user.first_name}
                     </span>
                   </button>
-                  <div className="absolute top-full right-0 mt-3 w-52 bg-white rounded-xl shadow-2xl border border-gray-100 p-2 opacity-0 invisible transform -translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
-                    <Link to="/perfil" className="block w-full px-4 py-2 text-gray-700 no-underline rounded-lg hover:bg-indigo-50 transition-colors">Mi Perfil</Link>
-                    <button onClick={handleLogout} className="w-full px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors text-left mt-2 border-t border-gray-100 cursor-pointer border-none bg-transparent">Cerrar sesión</button>
+
+                  {/* MENÚ DESPLEGABLE CON ESTADO REACT */}
+                  <div className={`
+                    absolute top-full right-0 mt-3 w-52 bg-white rounded-xl shadow-2xl border border-gray-100 p-2 transition-all duration-300 z-50
+                    ${isUserMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-4'}
+                  `}>
+                    <Link 
+                      to="/perfil" 
+                      onClick={() => setIsUserMenuOpen(false)}
+                      className="block w-full px-4 py-2 text-gray-700 no-underline rounded-lg hover:bg-indigo-50 transition-colors"
+                    >
+                      Mi Perfil
+                    </Link>
+                    <button 
+                      onClick={() => { handleLogout(); setIsUserMenuOpen(false); }} 
+                      className="w-full px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors text-left mt-2 border-t border-gray-100 cursor-pointer border-none bg-transparent"
+                    >
+                      Cerrar sesión
+                    </button>
                   </div>
-                </div>
+
+                  {/* Overlay invisible para cerrar el menú al hacer clic fuera */}
+                  {isUserMenuOpen && (
+                    <div 
+                      className="fixed inset-0 z-[-1]" 
+                      onClick={() => setIsUserMenuOpen(false)} 
+                    />
+                  )}
+                </>
               ) : (
                 <Link to="/login" className={`${USER_BTN_CLASSES} no-underline`}>
                   <User className="w-5 h-5 text-indigo-500 shrink-0" />

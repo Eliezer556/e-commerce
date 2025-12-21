@@ -26,6 +26,13 @@ export function OrderAdress() {
     const handleInputChange = (event) => {
         setErrors({});
         const { name, value } = event.target;
+
+        if (name === 'numero_de_casa') {
+            const onlyNums = value.replace(/[^0-9]/g, '');
+            setUserAddress(prev => ({ ...prev, [name]: onlyNums }));
+            return;
+        }
+
         setUserAddress(prev => ({ ...prev, [name]: value }));
     };
 
@@ -55,7 +62,9 @@ export function OrderAdress() {
         } else if (shippingDate < today) {
             tempErrors.fecha = 'No puede ser fecha pasada';
         }
-        if (!address.numero_de_casa) tempErrors.numero_de_casa = 'Requerido';
+        if (!address.numero_de_casa?.trim()) {
+            tempErrors.numero_de_casa = 'Ingresa solo el número de casa.';
+        }
         if (!address.calle) tempErrors.calle = 'Requerido';
 
         return tempErrors;
@@ -65,7 +74,7 @@ export function OrderAdress() {
         /* pt-24 compensa los 80px del NavBar fijo + un margen extra */
         <main className="min-h-screen bg-gray-50 pt-24 pb-12 px-4 md:px-8">
             <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                
+
                 {/* LADO IZQUIERDO: Resumen del Carrito */}
                 <section className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <div className="border-b pb-4 mb-6">
@@ -154,31 +163,43 @@ export function OrderAdress() {
                                     <div className="flex flex-col gap-1">
                                         <label className="text-xs font-semibold text-gray-600 ml-1">Nº Casa/Apto</label>
                                         <input
-                                            className="w-full p-3 rounded-xl border border-gray-100 bg-gray-50 text-sm focus:bg-white outline-none focus:border-indigo-500 shadow-sm"
+                                            className={`w-full p-3 rounded-xl border text-sm outline-none transition-all ${errors.numero_de_casa ? 'border-red-400 bg-red-50' : 'border-gray-100 bg-gray-50 focus:bg-white focus:border-indigo-500 shadow-sm'
+                                                }`}
                                             name="numero_de_casa"
                                             value={userAddress.numero_de_casa}
                                             onChange={handleInputChange}
-                                            placeholder="Ej: 42-B"
+                                            placeholder="Ej: 123"
+                                            inputMode="numeric"
                                         />
+                                        {errors.numero_de_casa && (
+                                            <span className="text-red-500 text-[10px] italic">{errors.numero_de_casa}</span>
+                                        )}
                                     </div>
                                     <div className="flex flex-col gap-1">
                                         <label className="text-xs font-semibold text-gray-600 ml-1">Calle / Av.</label>
                                         <input
-                                            className="w-full p-3 rounded-xl border border-gray-100 bg-gray-50 text-sm focus:bg-white outline-none focus:border-indigo-500 shadow-sm"
+                                            className={`w-full p-3 rounded-xl border text-sm outline-none transition-all ${errors.calle
+                                                    ? 'border-red-400 bg-red-50'
+                                                    : 'border-gray-100 bg-gray-50 focus:bg-white focus:border-indigo-500 shadow-sm'
+                                                }`}
                                             name="calle"
                                             value={userAddress.calle}
                                             onChange={handleInputChange}
                                             placeholder="Ej: Los Olivos"
                                         />
+                                        {/* Agregamos el mensaje de error visual */}
+                                        {errors.calle && (
+                                            <span className="text-red-500 text-[10px] italic">{errors.calle}</span>
+                                        )}
                                     </div>
                                 </div>
 
-                                <button 
-                                    type="submit" 
+                                <button
+                                    type="submit"
                                     disabled={cart.length === 0}
                                     className={`w-full py-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 mt-4 shadow-lg ${cart.length === 0 ? 'bg-gray-200 text-gray-400 cursor-not-allowed shadow-none' : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-indigo-100 hover:-translate-y-0.5'}`}
                                 >
-                                    {cart.length === 0 ? <>Carrito vacío <Ban size={16}/></> : 'Confirmar Datos de Envío'}
+                                    {cart.length === 0 ? <>Carrito vacío <Ban size={16} /></> : 'Confirmar Datos de Envío'}
                                 </button>
                             </form>
                         )
@@ -186,7 +207,7 @@ export function OrderAdress() {
                         <div className="text-center py-6">
                             <h4 className="text-gray-800 font-bold">¡Casi listo!</h4>
                             <p className="text-sm text-gray-500 mb-4">Inicia sesión para poder procesar tu pedido</p>
-                            <Link 
+                            <Link
                                 to={`/login?redirect=${encodeURIComponent(redirectTo)}`}
                                 className="inline-block px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors"
                             >
