@@ -99,7 +99,7 @@ DATABASES = {
         # Formato: postgres://USUARIO:PASSWORD@localhost:5432/NOMBRE_DB
         default='postgresql://postgres:123@localhost:5432/ecommerce_db',
         conn_max_age=600,
-        ssl_require=True
+        # ssl_require=True
     )
 }
 

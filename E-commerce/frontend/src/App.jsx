@@ -16,64 +16,63 @@ import { PerfilUserLayout } from './components/layout/PerfilUserLayout';
 import { MyPerfilDetails } from './components/features/MyPerfilDetails/MyPerfilDetails';
 import { MyOrders } from './components/features/MyOrders/MyOrders';
 import { FiltersProvider } from './context/FiltersContext';
+import { NotificationProvider } from './context/NotificationContext';
 
 function App() {
 
   return (
-    <AuthProvider>
-      <ProductProvider>
-        <CartProvider>
-          <FiltersProvider>
-            <Router>
-              <Routes>
-                <Route path='/' element={
-                  <WebSiteLayout>
-                    <Home />
-                  </WebSiteLayout>
-                } />
-                <Route path='/productos' element={
-                  <AppLayout>
-                    <ProductList />
-                  </AppLayout>
-                } />
-                {/* Rutas SIN Header y Footer */}
-                <Route path='/login' element={
-                  <AuthLayout>
-                    <LoginUser />
-                  </AuthLayout>
-                } />
 
-                <Route path='/registro' element={
-                  <AuthLayout>
-                    <RegisterUser />
-                  </AuthLayout>
-                } />
+    <NotificationProvider>
+      <AuthProvider>
+        <ProductProvider>
+          <CartProvider>
+            <FiltersProvider>
+              <Router>
+                <Routes>
+                  <Route path='/' element={
+                    <WebSiteLayout>
+                      <Home />
+                    </WebSiteLayout>
+                  } />
+                  <Route path='/productos' element={
+                    <AppLayout>
+                      <ProductList />
+                    </AppLayout>
+                  } />
+                  <Route path='/login' element={
+                    <AuthLayout>
+                      <LoginUser />
+                    </AuthLayout>
+                  } />
 
-                <Route path='/direccion_del_pedido' element={
-                  <AppLayout>
-                    <OrderAdress />
-                  </AppLayout>
-                } />
+                  <Route path='/registro' element={
+                    <AuthLayout>
+                      <RegisterUser />
+                    </AuthLayout>
+                  } />
 
-                <Route path='/perfil' element={
-                  <PerfilUserLayout>
-                    <PerfilUser />
-                  </PerfilUserLayout>
-                }>
-                  <Route index element={<MyPerfilDetails />}/>
+                  <Route path='/direccion_del_pedido' element={
+                    <AppLayout>
+                      <OrderAdress />
+                    </AppLayout>
+                  } />
 
-                  <Route path='pedidos' element={<MyOrders />} />
+                  <Route path='/perfil' element={
+                    <PerfilUserLayout>
+                      <PerfilUser />
+                    </PerfilUserLayout>
+                  }>
+                    <Route index element={<MyPerfilDetails />} />
 
-                  {/* <Route path='direccion' element={<MisDirecciones />} />
-
-                  <Route path='seguridad' element={<Seguridad />} />  */}
-                </Route>
-              </Routes>
-            </Router>
-          </FiltersProvider>
-        </CartProvider>
-      </ProductProvider>
-    </AuthProvider>
+                    <Route path='pedidos' element={<MyOrders />} />
+                  </Route>
+                </Routes>
+              </Router>
+            </FiltersProvider>
+          </CartProvider>
+        </ProductProvider>
+      </AuthProvider>
+    </NotificationProvider>
   )
 }
 

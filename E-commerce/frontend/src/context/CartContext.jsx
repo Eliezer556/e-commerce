@@ -1,18 +1,20 @@
 import { createContext, useEffect, useState, useContext } from "react";
+import { useNotification } from "./NotificationContext";
 
 export const CartContext = createContext();
 
 export function CartProvider({ children }) {
+    const { showNotification } = useNotification()
     const [cart, setCart] = useState(() => {
         try {
             const storedCard = localStorage.getItem('cart')
-            return storedCard ? JSON.parse(storedCard) : [] ;
+            return storedCard ? JSON.parse(storedCard) : [];
         } catch (error) {
             console.error('Error al guardar el carrito: ', error)
             return []
         }
     })
-    
+
     const saveToCartStorage = (cardData) => {
         try {
             console.log('Carrito guardado en localStorage')
@@ -21,7 +23,7 @@ export function CartProvider({ children }) {
             console.error('Error al guardar en el carrito', error)
         }
     }
-    
+
     useEffect(() => {
         saveToCartStorage(cart)
     }, [cart])
@@ -43,13 +45,14 @@ export function CartProvider({ children }) {
                 );
             }
 
-            // Producto nuevo - agregar con cantidad 1
             return [...prevCart, {
-                ...product, 
+                ...product,
                 quantity: 1,
                 totalPrice: parseFloat(product.precio)
             }];
         });
+
+        showNotification("Tu producto ha sido agregado al carrito.")
     };
 
     const deleteToCart = (product) => {
