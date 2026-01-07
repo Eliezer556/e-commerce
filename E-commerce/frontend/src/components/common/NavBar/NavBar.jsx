@@ -17,7 +17,6 @@ export function NavBar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  /* NUEVO ESTADO PARA EL MENÚ DE USUARIO */
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
   const handleLogout = async () => {
@@ -55,9 +54,9 @@ export function NavBar() {
         <div className="flex flex-col gap-2">
           <Link to="/" onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-indigo-600 font-semibold hover:bg-indigo-50 px-2 transition-colors rounded-md no-underline">Inicio</Link>
           <Link to="/productos" onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 px-2 transition-colors rounded-md no-underline">Productos</Link>
-          <Link to="/categories" onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 px-2 transition-colors rounded-md no-underline">Categorías</Link>
-          <Link to="/offers" onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 px-2 transition-colors rounded-md no-underline">Ofertas</Link>
+          {/* <Link to="/offers" onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 px-2 transition-colors rounded-md no-underline">Ofertas</Link> */}
           <Link to="/about" onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 px-2 transition-colors rounded-md no-underline">Nosotros</Link>
+          <Link to="/help_center" onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-gray-700 font-medium hover:bg-indigo-50 hover:text-indigo-600 px-2 transition-colors rounded-md no-underline">Ayuda</Link>
         </div>
 
         {!isAuthenticated && (
@@ -78,9 +77,9 @@ export function NavBar() {
           <nav className="hidden lg:flex gap-10">
             <Link to="/" className={`${BASE_LINK_CLASSES} text-indigo-700 after:scale-x-100 no-underline`}>Inicio</Link>
             <Link to="/productos" className={`${BASE_LINK_CLASSES} no-underline`}>Productos</Link>
-            <Link to="/categories" className={`${BASE_LINK_CLASSES} no-underline`}>Categorías</Link>
-            <Link to="/offers" className={`${BASE_LINK_CLASSES} no-underline`}>Ofertas</Link>
+            {/* <Link to="/offers" className={`${BASE_LINK_CLASSES} no-underline`}>Ofertas</Link> */}
             <Link to="/about" className={`${BASE_LINK_CLASSES} no-underline`}>Nosotros</Link>
+            <Link to="/help_center" className={`${BASE_LINK_CLASSES} no-underline`}>Ayuda</Link>
           </nav>
 
           <div className="flex items-center gap-3 md:gap-4">

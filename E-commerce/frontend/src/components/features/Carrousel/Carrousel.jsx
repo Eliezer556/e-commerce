@@ -3,8 +3,24 @@ import { ChevronRight, ChevronLeft, ShoppingBag, MoveRight, CirclePlus } from 'l
 import { useState, useMemo, useEffect } from 'react';
 import { useCart } from "../../../context/CartContext";
 
+function CarrouselSkeleton(){
+    return (
+        <section className="container mx-auto px-4 pt-16 pb-20">
+            <h1 className="text-center text-gray-500">Esta despertando nuestra base de datos gratuita, solo tardara un momento...</h1>
+            <div className="">
+                <div className="h-8 w-48 bg-gray-200 animate-pulse rounded-lg mb-8"></div>
+                <div className="flex gap-4 overflow-hidden">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                        <div key={i} className="flex-shrink-0 w-1/5 h-80 bg-gray-100 animate-pulse rounded-3xl"></div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
+
 export function Carrousel() {
-    const { products } = useProducts()
+    const { products, loading } = useProducts()
     const { addToCart } = useCart()
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemsToShow, setItemsToShow] = useState(5);
@@ -34,6 +50,12 @@ export function Carrousel() {
     const prevSlide = () => {
         setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
     };
+
+    if (products.length === 0){
+        return (
+            <CarrouselSkeleton />
+        )
+    }
 
     return (
         <div className="container mx-auto px-4 md:px-6 pt-16 pb-20 overflow-hidden">

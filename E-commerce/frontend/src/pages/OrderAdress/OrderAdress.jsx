@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { VENEZUELAN_CITIES as cities } from './CitiesList';
 import { Order } from '../Order/Order';
@@ -23,6 +23,10 @@ export function OrderAdress() {
 
     const [errors, setErrors] = useState({});
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const handleInputChange = (event) => {
         setErrors({});
         const { name, value } = event.target;
@@ -45,6 +49,7 @@ export function OrderAdress() {
 
         if (Object.keys(validationErrors).length > 0) return;
         setAddressSubmitted(true);
+        window.scrollTo(0, 0);
     };
 
     const validateAddress = (address) => {
@@ -71,42 +76,73 @@ export function OrderAdress() {
     };
 
     return (
-        /* pt-24 compensa los 80px del NavBar fijo + un margen extra */
         <main className="min-h-screen bg-gray-50 pt-24 pb-12 px-4 md:px-8">
             <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-
-                {/* LADO IZQUIERDO: Resumen del Carrito */}
-                <section className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                    <div className="border-b pb-4 mb-6">
-                        <h2 className="text-xl font-bold text-gray-800">Verifica tu pedido</h2>
-                        <p className="text-indigo-600 text-sm font-medium">Revisa los artículos antes de continuar</p>
+                <section className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div className="pb-4 mb-6">
+                        <h2 className="text-xl font-bold text-gray-800 tracking-tight">Verifica tu pedido</h2>
+                        <p className="text-gray-600 text-sm font-xl tracking-wide text-[12px]">Revisa los artículos antes de continuar</p>
                     </div>
 
                     {cart.length === 0 ? (
-                        <div className="flex flex-col items-center py-10 text-center">
-                            <img className="w-48 h-48 mb-4 opacity-80" src="./emptyCart.jpeg" alt="Vacío" />
-                            <p className="text-gray-400">No hay productos en tu carrito</p>
+                        <div className="flex flex-col items-center py-12 text-center bg-gray-50 rounded-2xl border border-dashed border-gray-200">
+                            <img className="w-32 h-32 mb-4 opacity-40 grayscale" src="./emptyCart.jpeg" alt="Vacío" />
+                            <p className="text-gray-400 font-medium">Tu carrito está esperando ser llenado</p>
                         </div>
                     ) : (
-                        <div className="space-y-4 max-h-[500px] overflow-y-auto pr-2">
-                            {cart.map(item => (
-                                <div key={item.id} className="flex gap-4 p-3 rounded-xl hover:bg-gray-50 transition-colors border-b last:border-0">
-                                    <img className="w-16 h-16 rounded-lg object-cover" src={item.imagen_url} alt={item.name} />
-                                    <div className="flex-1">
-                                        <h4 className="font-bold text-gray-800 text-sm">{item.name}</h4>
-                                        <div className="flex justify-between items-end mt-1">
-                                            <span className="text-xs text-gray-500">Cant: {item.quantity}</span>
-                                            <span className="font-bold text-indigo-600">${item.precio}</span>
+                        <div className="max-h-[500px] overflow-y-auto rounded-2xl border border-gray-50 pr-1">
+                            <div className="flex flex-col">
+                                {cart.map((item, index) => (
+                                    <div
+                                        key={item.id}
+                                        className={`
+                            flex gap-4 p-4 transition-all duration-300 items-center
+                            ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50/80'}
+                            hover:bg-indigo-50/30
+                        `}
+                                    >
+                                        <div className="relative group flex-shrink-0">
+                                            <img
+                                                className="w-20 h-20 rounded-2xl object-contain bg-white border border-gray-100 p-1 shadow-sm transition-transform duration-300 group-hover:scale-105"
+                                                src={item.imagen_url}
+                                                alt={item.name}
+                                            />
+                                            <span className="absolute -top-2 -right-2 bg-slate-900 text-white text-[10px] font-bold w-6 h-6 flex items-center justify-center rounded-full border-2 border-white shadow-sm">
+                                                {item.quantity}
+                                            </span>
+                                        </div>
+
+                                        <div className="flex-1 min-w-0">
+                                            <h4 className="font-bold text-gray-800 text-sm truncate mb-1">
+                                                {item.name}
+                                            </h4>
+                                            <p className="text-[10px] font-bold text-indigo-500 uppercase tracking-widest mb-2">
+                                                {item.categoria_nombre || 'Producto'}
+                                            </p>
+                                            <div className="flex justify-between items-center">
+                                                <span className="text-xs text-gray-400 font-medium">Precio Unitario</span>
+                                                <span className="font-black text-indigo-600 text-base italic">
+                                                    ${item.precio}
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {cart.length > 0 && (
+                        <div className="mt-6 pt-6 border-t border-gray-100 flex justify-between items-center">
+                            <span className="text-gray-500 font-medium">Total estimado</span>
+                            <span className="text-2xl font-black text-slate-900">
+                                ${cart.reduce((acc, item) => acc + (item.precio * item.quantity), 0).toFixed(2)}
+                            </span>
                         </div>
                     )}
                 </section>
 
-                {/* LADO DERECHO: Formulario de Dirección */}
-                <section className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 sticky top-28">
+                <section className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 lg:sticky lg:top-28">
                     {isAuthenticated ? (
                         addressSubmitted ? (
                             <Order shippingAdress={userAddress} />
@@ -179,15 +215,14 @@ export function OrderAdress() {
                                         <label className="text-xs font-semibold text-gray-600 ml-1">Calle / Av.</label>
                                         <input
                                             className={`w-full p-3 rounded-xl border text-sm outline-none transition-all ${errors.calle
-                                                    ? 'border-red-400 bg-red-50'
-                                                    : 'border-gray-100 bg-gray-50 focus:bg-white focus:border-indigo-500 shadow-sm'
+                                                ? 'border-red-400 bg-red-50'
+                                                : 'border-gray-100 bg-gray-50 focus:bg-white focus:border-indigo-500 shadow-sm'
                                                 }`}
                                             name="calle"
                                             value={userAddress.calle}
                                             onChange={handleInputChange}
                                             placeholder="Ej: Los Olivos"
                                         />
-                                        {/* Agregamos el mensaje de error visual */}
                                         {errors.calle && (
                                             <span className="text-red-500 text-[10px] italic">{errors.calle}</span>
                                         )}

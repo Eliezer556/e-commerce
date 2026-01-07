@@ -5,7 +5,7 @@ import { LogOut, User, ShoppingCart, Lock, Undo2, ChevronRight } from 'lucide-re
 const navItems = [
     { to: "/perfil", icon: User, label: "Mi Perfil" },
     { to: "/perfil/pedidos", icon: ShoppingCart, label: "Mis Pedidos" },
-    { to: "/perfil/seguridad", icon: Lock, label: "Seguridad y Clave" },
+    // { to: "/perfil/seguridad", icon: Lock, label: "Seguridad y Clave" },
     { to: "/", icon: Undo2, label: "Volver a inicio" },
 ];
 

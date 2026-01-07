@@ -32,6 +32,13 @@ export function MyOrderDetail({ onClose, children }) {
         estado 
     } = children;
 
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, []);
+
     const statusStyles = {
         'pendiente-de-pago': 'bg-amber-100 text-amber-700 border-amber-200',
         'confirmado': 'bg-cyan-100 text-cyan-700 border-cyan-200',
@@ -46,19 +53,17 @@ export function MyOrderDetail({ onClose, children }) {
     return (
         <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-300">
             
-            <div className="bg-white w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[2rem] shadow-2xl relative animate-in zoom-in-95 duration-300">
+            <div className="bg-white w-full max-w-2xl max-h-[90vh] flex flex-col rounded-[0.20rem] shadow-2xl relative animate-in zoom-in-95 duration-300 overflow-hidden">
                 
-                {/* BOTÓN CERRAR (X) */}
                 <button 
                     onClick={onClose}
-                    className="absolute top-6 right-6 p-2 hover:bg-gray-100 rounded-full transition-colors text-gray-400 hover:text-gray-600"
+                    className="absolute top-6 right-6 p-2 hover:bg-gray-100 rounded-full transition-colors text-gray-400 hover:text-gray-600 z-50"
                 >
                     <X size={20} />
                 </button>
 
-                <div className="p-8 md:p-10">
+                <div className="flex-1 overflow-y-auto p-8 md:p-10 custom-scrollbar">
                     
-                    {/* 1. CABECERA */}
                     <div className="flex items-center gap-3 mb-8">
                         <div className="p-3 bg-indigo-50 text-indigo-600 rounded-2xl">
                             <ShoppingBag size={24} />
@@ -68,9 +73,7 @@ export function MyOrderDetail({ onClose, children }) {
                         </h3>
                     </div>
 
-                    {/* 2. GRID INFORMACIÓN */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-                        {/* Columna 1 */}
                         <div className="space-y-4">
                             <h4 className="text-xs font-black uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2">
                                 Información General
@@ -78,7 +81,7 @@ export function MyOrderDetail({ onClose, children }) {
                             <div className="space-y-3">
                                 <div className="flex justify-between items-center text-sm">
                                     <span className="font-bold text-gray-500">Estado</span>
-                                    <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase border ${statusStyles[statusClass] || statusStyles['desconocido']}`}>
+                                    <span className={`px-3 py-1 rounded-full text-[0.70rem] font-semibold border ${statusStyles[statusClass] || statusStyles['desconocido']}`}>
                                         {estado_display}
                                     </span>
                                 </div>
@@ -93,7 +96,6 @@ export function MyOrderDetail({ onClose, children }) {
                             </div>
                         </div>
 
-                        {/* Columna 2 */}
                         <div className="space-y-4">
                             <h4 className="text-xs font-black uppercase tracking-widest text-gray-400 border-b border-gray-100 pb-2 flex items-center gap-2">
                                 <MapPin size={14} /> Envío
@@ -117,13 +119,12 @@ export function MyOrderDetail({ onClose, children }) {
                         </div>
                     </div>
 
-                    {/* 3. PRODUCTOS */}
                     <div className="space-y-4 mb-10">
                         <h4 className="text-xs font-black uppercase tracking-widest text-gray-400 flex items-center gap-2">
                             <Package size={16} /> Productos ({items ? items.length : 0})
                         </h4>
                         
-                        <div className="bg-gray-50 rounded-2xl p-2">
+                        <div className="bg-gray-50 rounded-[0.50rem] p-2">
                             <div className="grid grid-cols-[3fr_1fr_1.5fr] p-4 text-[10px] font-black uppercase tracking-wider text-gray-400">
                                 <div>Producto</div>
                                 <div className="text-center">Cant.</div>
@@ -148,8 +149,7 @@ export function MyOrderDetail({ onClose, children }) {
                         </div>
                     </div>
 
-                    {/* 4. TOTALES */}
-                    <div className="bg-indigo-600 rounded-3xl p-8 text-white shadow-xl shadow-indigo-100 space-y-3">
+                    <div className="bg-indigo-600 rounded-[0.50rem] p-8 text-white shadow-xl shadow-indigo-100 space-y-3">
                         <div className="flex justify-between text-sm opacity-80 font-medium">
                             <span>Subtotal</span>
                             <span>{formatCurrency(subtotal)}</span>
@@ -174,8 +174,7 @@ export function MyOrderDetail({ onClose, children }) {
                         </div>
                     </div>
 
-                    {/* 5. FOOTER */}
-                    <div className="mt-10 flex justify-center">
+                    <div className="mt-10 flex justify-center pb-2">
                         <button
                             className="w-full md:w-auto px-10 py-4 bg-gray-100 hover:bg-gray-200 text-gray-600 font-black rounded-2xl transition-all active:scale-95"
                             onClick={onClose}
@@ -185,6 +184,24 @@ export function MyOrderDetail({ onClose, children }) {
                     </div>
                 </div>
             </div>
+
+            <style dangerouslySetInnerHTML={{ __html: `
+                .custom-scrollbar::-webkit-scrollbar {
+                    width: 8px;
+                }
+                .custom-scrollbar::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 0 2rem 2rem 0;
+                }
+                .custom-scrollbar::-webkit-scrollbar-thumb {
+                    background: #c7d2fe;
+                    border-radius: 10px;
+                    border: 2px solid #f1f1f1;
+                }
+                .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                    background: #818cf8;
+                }
+            `}} />
         </div>
     )
 }

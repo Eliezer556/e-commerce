@@ -17,6 +17,10 @@ import { MyPerfilDetails } from './components/features/MyPerfilDetails/MyPerfilD
 import { MyOrders } from './components/features/MyOrders/MyOrders';
 import { FiltersProvider } from './context/FiltersContext';
 import { NotificationProvider } from './context/NotificationContext';
+import { AboutUs } from './pages/AboutUs/AboutUs';
+import { HelpCenter } from './pages/HelpCenter/HelpCenter';
+
+
 
 function App() {
 
@@ -39,6 +43,19 @@ function App() {
                       <ProductList />
                     </AppLayout>
                   } />
+
+                  <Route path='/about' element={
+                    <AppLayout>
+                      <AboutUs />
+                    </AppLayout>
+                  } />
+
+                  <Route path='/help_center' element={
+                    <AppLayout>
+                      <HelpCenter />
+                    </AppLayout>
+                  } />
+                  
                   <Route path='/login' element={
                     <AuthLayout>
                       <LoginUser />
