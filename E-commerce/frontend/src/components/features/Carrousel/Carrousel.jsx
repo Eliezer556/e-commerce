@@ -3,15 +3,26 @@ import { ChevronRight, ChevronLeft, ShoppingBag, MoveRight, CirclePlus } from 'l
 import { useState, useMemo, useEffect } from 'react';
 import { useCart } from "../../../context/CartContext";
 
-function CarrouselSkeleton(){
+function CarrouselSkeleton() {
     return (
-        <section className="container mx-auto px-4 pt-16 pb-20">
-            <h1 className="text-center text-gray-500">Esta despertando nuestra base de datos gratuita, solo tardara un momento...</h1>
-            <div className="">
-                <div className="h-8 w-48 bg-gray-200 animate-pulse rounded-lg mb-8"></div>
-                <div className="flex gap-4 overflow-hidden">
+        <section className="container mx-auto px-4 pt-10 md:pt-16 pb-20">
+            <h1 className="text-center text-gray-500 mb-10 text-sm md:text-base animate-pulse">
+                Está despertando nuestra base de datos gratuita, solo tardará un momento...
+            </h1>
+            <div className="w-full">
+                <div className="h-8 w-40 md:w-48 bg-gray-200 animate-pulse rounded-lg mb-8 mx-auto md:mx-0"></div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                     {[1, 2, 3, 4, 5].map((i) => (
-                        <div key={i} className="flex-shrink-0 w-1/5 h-80 bg-gray-100 animate-pulse rounded-3xl"></div>
+                        <div
+                            key={i}
+                            className={`
+                        bg-gray-100 animate-pulse rounded-3xl h-80
+                        ${i > 1 ? 'hidden sm:block' : ''} 
+                        ${i > 2 ? 'hidden md:block' : ''}
+                        ${i > 3 ? 'hidden lg:block' : ''}
+                        ${i > 4 ? 'hidden xl:block' : ''}
+                    `}
+                        ></div>
                     ))}
                 </div>
             </div>
@@ -51,7 +62,7 @@ export function Carrousel() {
         setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
     };
 
-    if (products.length === 0){
+    if (products.length === 0) {
         return (
             <CarrouselSkeleton />
         )
@@ -113,11 +124,11 @@ export function Carrousel() {
                                             <span className="text-xs text-slate-400 line-through">${(product.precio * 1.2).toFixed(2)}</span>
                                             <span className="text-xl font-black text-slate-900">${product.precio}</span>
                                         </div>
-                                        <button 
+                                        <button
                                             className="cursor-pointer p-2.5 bg-indigo-600 text-white rounded-xl shadow-md hover:bg-indigo-700 transition-all active:scale-95"
                                             onClick={() => addToCart(product)}
                                         >
-                                            <CirclePlus size={17}/>
+                                            <CirclePlus size={17} />
                                         </button>
                                     </div>
                                 </div>
